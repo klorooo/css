@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-sefif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e8e8e8;
+    display: block;
+    margin: 0 auto 1.25rem;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.25rem;
+}
+
+.role {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: #4b5563;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+}
+
+.social-link {
+    transition: background 0.2s, transform 0.2s, color 0.2s;
+}
+
+.social-link:hover {
+    background: #111;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.card:hover .avatar {
+    border-color: #6366f1;
+    transition: border-color 0.3s;
+}
+
+.card-accent {
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 4px 4px 0 0;
+    margin: -2.5rem -2rem 1.5rem;
+}
